@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>Tropical Treats</title>
+</head>
+<body>
+
+	<link rel="stylesheet" type="text/css" href="MyStyle.css">
+
+  <div id="logo">
+  <a href="index.html">
+    <img src="Images\Picture1.png" width="200" height="200">
+  </a>
+  </div>      
+      
+<ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Menu.html">Menu</a></li>
+  <li><a class="active" href="About.html">About</a></li>
+  <li><a class="RED" href="Specials.html">WeeklySpecials</a>
+
+</ul>
+<div id="aboutcover">
+
+  <h1 style="text-align: center;">
+    About Me
+  </h1>
+  <img src="Images\aboutbanner.jpg" style="width: 100%">
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Images\slide1.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Images\slide2.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images\slide3.jpg" style="width:100%">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+  <table>
+  <tr>
+    <th></th>
+    <th></th>
+
+  </tr>
+  <tr>
+    <td> <img id="chef" src="Images\chef.jpg"> </td>
+    <td id="tdtext"> <h2>Jhon Ramsay</h2> <h4>(Trophical Treats Owner and Head Chef)</h4> Bragging on my new bakery, great location near Willows Shopping Centre. I am an artisan-baker and I trained in Paris.I specialise in traditional Australian baked goods. Some of my current customers are James Cook University, the Cowboys and Telstra and feedbacks from them are really wonderful for me to hear.</td> 
+
+  </tr>
+
+  </tr>
+</table>
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+<div>
+  <footer>
+  <p>Contacts:0455 5555 555, Catering:0433 3333 333, Address:123 Prize Lane, Kirwan, QLD</p>
+</footer>
+</div>
+
+
+
+
+</body>
+</html>
